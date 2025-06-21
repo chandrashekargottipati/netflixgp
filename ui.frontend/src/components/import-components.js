@@ -18,8 +18,12 @@ import withAsyncImport from "../utils/withAsyncImport";
 import './Page/Page';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
+import './Login/Login';
+import './TitleText/TitleText';
 
-import {MapTo} from '@adobe/aem-react-editable-components';
+
+
+import { MapTo } from '@adobe/aem-react-editable-components';
 
 import {
     CarouselV1IsEmptyFn
@@ -32,19 +36,19 @@ import {
 import {
     ContainerV1, ContainerV1IsEmptyFn,
     TabsV1, TabsV1IsEmptyFn,
-    AccordionV1,AccordionV1IsEmptyFn,
+    AccordionV1, AccordionV1IsEmptyFn,
 } from '@adobe/aem-core-components-react-spa';
 
 import {
-    BreadCrumbV2,BreadCrumbV2IsEmptyFn,
-    ButtonV1,ButtonV1IsEmptyFn,
-    ImageV2,ImageV2IsEmptyFn,
+    BreadCrumbV2, BreadCrumbV2IsEmptyFn,
+    ButtonV1, ButtonV1IsEmptyFn,
+    ImageV2, ImageV2IsEmptyFn,
     LanguageNavigationV1,
     NavigationV1,
-    TeaserV1,TeaserV1IsEmptyFn,
-    DownloadV1,DownloadV1IsEmptyFn,
-    SeparatorV1,SeparatorV1IsEmptyFn,
-    ListV2,ListV2IsEmptyFn
+    TeaserV1, TeaserV1IsEmptyFn,
+    DownloadV1, DownloadV1IsEmptyFn,
+    SeparatorV1, SeparatorV1IsEmptyFn,
+    ListV2, ListV2IsEmptyFn
 } from '@adobe/aem-core-components-react-base';
 
 //lazyload / code splitting example of an internal component
@@ -55,25 +59,25 @@ const TitleV2 = withAsyncImport(() => import(`@adobe/aem-core-components-react-b
 const CarouselV1 = withAsyncImport(() => import(`@adobe/aem-core-components-react-spa/dist/container/carousel/v1/CarouselV1`));
 
 
-MapTo('netflixgpt/components/download')(DownloadV1, {isEmpty: DownloadV1IsEmptyFn});
-MapTo('netflixgpt/components/list')(ListV2, {isEmpty: ListV2IsEmptyFn});
-MapTo('netflixgpt/components/separator')(SeparatorV1, {isEmpty: SeparatorV1IsEmptyFn});
+MapTo('netflixgpt/components/download')(DownloadV1, { isEmpty: DownloadV1IsEmptyFn });
+MapTo('netflixgpt/components/list')(ListV2, { isEmpty: ListV2IsEmptyFn });
+MapTo('netflixgpt/components/separator')(SeparatorV1, { isEmpty: SeparatorV1IsEmptyFn });
 
-MapTo('netflixgpt/components/button')(ButtonV1, {isEmpty: ButtonV1IsEmptyFn});
-MapTo('netflixgpt/components/teaser')(TeaserV1, {isEmpty: TeaserV1IsEmptyFn});
-MapTo('netflixgpt/components/image')(ImageV2, {isEmpty: ImageV2IsEmptyFn});
-MapTo('netflixgpt/components/title')(TitleV2, {isEmpty: TitleV2IsEmptyFn});
+MapTo('netflixgpt/components/button')(ButtonV1, { isEmpty: ButtonV1IsEmptyFn });
+MapTo('netflixgpt/components/teaser')(TeaserV1, { isEmpty: TeaserV1IsEmptyFn });
+MapTo('netflixgpt/components/image')(ImageV2, { isEmpty: ImageV2IsEmptyFn });
+MapTo('netflixgpt/components/title')(TitleV2, { isEmpty: TitleV2IsEmptyFn });
 
 
-MapTo('netflixgpt/components/breadcrumb')(BreadCrumbV2, {isEmpty: BreadCrumbV2IsEmptyFn});
+MapTo('netflixgpt/components/breadcrumb')(BreadCrumbV2, { isEmpty: BreadCrumbV2IsEmptyFn });
 MapTo('netflixgpt/components/navigation')(NavigationV1);
 MapTo('netflixgpt/components/languagenavigation')(LanguageNavigationV1);
 
 
-MapTo('netflixgpt/components/tabs')(TabsV1, {isEmpty: TabsV1IsEmptyFn});
-MapTo('netflixgpt/components/accordion')(AccordionV1, {isEmpty: AccordionV1IsEmptyFn});
-MapTo('netflixgpt/components/carousel')(CarouselV1, {isEmpty: CarouselV1IsEmptyFn});
-MapTo('netflixgpt/components/container')(ContainerV1, {isEmpty: ContainerV1IsEmptyFn});
+MapTo('netflixgpt/components/tabs')(TabsV1, { isEmpty: TabsV1IsEmptyFn });
+MapTo('netflixgpt/components/accordion')(AccordionV1, { isEmpty: AccordionV1IsEmptyFn });
+MapTo('netflixgpt/components/carousel')(CarouselV1, { isEmpty: CarouselV1IsEmptyFn });
+MapTo('netflixgpt/components/container')(ContainerV1, { isEmpty: ContainerV1IsEmptyFn });
 
 
 //lazy load of internal component (hello world)
@@ -92,3 +96,4 @@ const TextEditConfig = {
 };
 
 MapTo('netflixgpt/components/text')(LazyTextComponent, TextEditConfig);
+
