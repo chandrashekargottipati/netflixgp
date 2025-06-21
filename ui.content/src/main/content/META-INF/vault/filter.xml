@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/netflixgpt" mode="merge"/>
+    <filter root="/content/netflixgpt" mode="merge"/>
+    <filter root="/content/dam/netflixgpt" mode="merge">
+        <exclude pattern="/content/dam/netflixgpt(/.*)?"/>
+        <include pattern="/content/dam/netflixgpt/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/netflixgpt/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/netflixgpt" mode="merge"/>
+</workspaceFilter>
