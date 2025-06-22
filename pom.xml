@@ -85,7 +85,7 @@
             
     <aem.sdk.api>2025.1.19149.20250116T154450Z-241100</aem.sdk.api>
             
-    <aemanalyser.version>1.4.10</aemanalyser.version>
+    <aemanalyser.version>1.6.6</aemanalyser.version>
             
     <componentGroupName>NetflixGPT</componentGroupName>
         
