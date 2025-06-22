@@ -13,7 +13,7 @@ import './components/import-components';
 import './index.css';
 
 const modelManagerOptions = {};
-if(process.env.REACT_APP_PROXY_ENABLED) {
+if (process.env.REACT_APP_PROXY_ENABLED) {
     modelManagerOptions.modelClient = new LocalDevModelClient(process.env.REACT_APP_API_HOST);
 }
 
